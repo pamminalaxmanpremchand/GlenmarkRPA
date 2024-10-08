@@ -1,0 +1,117 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ScroleButton" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="502,893" sap2010:WorkflowViewState.IdRef="ScroleButton_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ScroleButton" sap:VirtualizedContainerService.HintSize="512,828" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Projects Available " sap:VirtualizedContainerService.HintSize="450,740" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="a00de28c-7234-4247-b6ec-fed4ff14aee4" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,426" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="354,177" sap2010:WorkflowViewState.IdRef="NMouseScroll_2" InteractionMode="HardwareEvents" MovementUnits="4" Version="V3" />
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="354,162" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="up" KeyModifiers="None">
+              <ui:SendHotkey.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="efcdc0c8-26d1-4270-8407-f899afa0d019">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SendHotkey.Target>
+            </ui:SendHotkey>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" FilePath="C:\Empower\Bin\project.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQ9SURBVFhH7ZfbU1tVFMYzffDF6av/gDP+Fb5jbbWWcmmh15RWqTN0KgUBgZJA7gGaBqiU0BAuIRACxWq1WF9rIfWhT/pU3/AFyO3k5Aqfa52TyymelItOfNA9880+7L3Z32+tvc7JOZr/27/eLHZHp67PjHKqz2jTkfVbpCMak8W289urdbz89XfSq39Un7U7VHuGIPN3JAizdUD8eTWIv6PVtRdYC/6CtReyVun6OY2x1NbnAN4lva2hdIixeALpVBKpZOIQkv8vqaLda9lDTGXyAO+RjhKAVeTBcuovAJlsVppYWXmGpz+93JdWfnyGbCYtKRgMqiof+fvXJyTxtSpANgfAG1d1LaC624+annnU6udwxuDDWZMP9TYv6vtncN4xhQvOSWntH+vrSCXiBaNSOhDAZfMytNaH0NqW0DCwiKuOAK45F/DpyDwaR+dw3eXD5+5ZBYCgGj1rXwD8x7YCoMn5HZqGv8WNe49w8z7JtYxm90Pc8iyhZXoRrd4A2ub8BYA0AfDGyaQo9wm5V4rNK3qHpWtVAEGUJ3jTtvEn6HD/gA7P9+icfowvyPyG24/GcS+ujLmhdY2jYcJVBBDjqtGz8gBsfuqerTRAVBALAHrvU9yeeYKGIR9OmsfwgXEIH1rv4kS/Ax/dGcRJZz9OjdgUALkMUOTS7cf9riywef1Mz/4Amh98gxOGUVT0DeOY2YnjNjIfuIOP7w7gk2G7tNnp+xYFQEw1elYegM0bHzeVBogpACr0I3LUFjIvRE3mI3ZUfm3F6TEzqh8YiwBUA0l6GCXoKPKGu8XmbwaIFwGOmXIp56gdZD5EKaeoK0ctqHKZUOM24IyntwCQoiNQi551AAB5gjc9bqeoBxUp56gp5dXjJtRO9OHspB51lNICQFw40GN8TwBloVWOWlFFKa+hlNd6yHxKR+d5G+d9XUUAOgK16FmHAlAWWnU+5ZO9qJvuwTlvNy7MdeKSv/01gFTuDlAz3K09AZSFJqV8Si9HPduFi/Nf4dJCO7SLrQWABNUAF6DaA4jHRJqLRqMIh8OIhEN7AygLrW5aR1Fzyjtx0d+By4E2XFlqRcPyrQJA8g23YTJB+xJgJBJGKBRCOLRVAkDxJFQW2rlZTjlFTSnXBr4k8xZcXW7GtUc3FQBR1ejzGYhTkXLkm5ub2NraVAeIi/KLwuTUorTxfjThCchHQAZq0bPigoBYNELGWzIASRUgEpMzwL/tvOlBFI8VM8A914MgxBClcT53jnpjY0NSSYBQNAH+ScZ2CumkACANZGksFUeGhO0kje2Qtkm0jueRwk5GLjI2ls1FCJSRGJlHKfIwnT2ff16cjZIAPFEuvQbA7+jdOkOCBw+jXqMVRosdFvsgTNZBGEw26FXWKdXc0j5E5vJbMTX+QOB3dB5gqnKIveTvAmpHchdMc7RMYi/5y+g/3jSaPwH2G61IeD/6MgAAAABJRU5ErkJggg==" InformativeScreenshot="3addcb17f4e85995d81b6b9bf7a852ee.png" Selector="&lt;wnd app='project.exe' cls='AfxFrameOrView140' title='Projects Available ' /&gt;" Title="Projects Available " />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

@@ -1,0 +1,559 @@
+<Activity mc:Ignorable="sads sap sap2010" x:Class="BrowsingProjects" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="ProjName" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>BrowsingProjects_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap2010:WorkflowViewState.ViewStateManager>
+    <sap2010:ViewStateManager>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="432,22" Id="Delay_1" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="314,91" Id="LogMessage_2" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="314,134" Id="SelectItem_3" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="314,134" Id="ClickText_11" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="314,134" Id="ClickText_12" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="314,134" Id="ClickText_6" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="314,91" Id="LogMessage_7" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="404,21" Id="Catch`1_2">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="200,51" Id="TryCatch_2">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="440,175" Id="Sequence_15">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="314,51" Id="CommentOut_5">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="314,91" Id="LogMessage_3" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="314,106" Id="Click_2" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="336,1105" Id="Sequence_6">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="414,1251" Id="WindowScope_3">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="414,91" Id="LogMessage_1" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="314,134" Id="ClickText_7" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="314,106" Id="Click_3" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="336,404" Id="Sequence_8">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="414,550" Id="WindowScope_4">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="200,51" Id="Sequence_9">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="418,21" Id="Catch`1_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="432,1478" Id="TryCatch_1" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="314,134" Id="SelectItem_2" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="314,134" Id="ClickText_8" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="314,134" Id="ClickText_9" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="314,134" Id="ClickText_10" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="314,106" Id="Click_4" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="336,926" Id="Sequence_13">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="414,1072" Id="WindowScope_5">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="436,1196" Id="Sequence_14">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="432,51" Id="CommentOut_4">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="454,1755" Id="Sequence_2">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="494,1835" Id="BrowsingProjects_1" />
+    </sap2010:ViewStateManager>
+  </sap2010:WorkflowViewState.ViewStateManager>
+  <Sequence DisplayName="BrowsingProjects" sap2010:WorkflowViewState.IdRef="Sequence_2" sads:DebugSymbol.Symbol="d3RDOlxVc2Vyc1xQNzAwMDIyODhcRGVza3RvcFxSZXZpZXcgUHJvY2Vzc1xSUEFDRCBGVE8gJiBDVE8gd2l0aCBvdXQgTElNUyBCdWlsZFxRVUVVRVNcRnJhbWV3b3JrXEJyb3dzaW5nUHJvamVjdHMueGFtbDVFA4EDDgIBAUYFRkwCAT9HBYcCEAIBA4gCBf8CFQIBAkYVRh8CAUBJCdABGgIBF9gBDYMCGAIBBEmDAknIAgIBPknTAknZAgIBPU8PzQEaAgEY2QEP2QG3AQIBFNoBD4ICIAIBBVARULIBAgE6URF7IQIBMnwRigEgAgEpiwERmQEgAgEhmgERvAEhAgEgvQERvQGxAQIBHb4BEcwBHAIBGdkBfNkBtAECARXaAYkC2gHQAgIBE9oB2wLaAeICAgES4AEV/wEgAgEGUH5QrwECATtRRlFMAgE2UVlRXwIBNVG+AVHKAQIBM3mPAXnjAgIBOHnuAnn1AgIBN3xufHQCAS58X3xlAgEtfL0CfMkCAgErfJkCfJwCAgEqiAGPAYgB4wICATCIAe4CiAH0AgIBL4sBbosBdAIBJosBX4sBZQIBJYsBvQKLAckCAgEjiwGZAosBnAICASKXAaQBlwH4AgIBJ70Bfr0BrgECAR7KAaQBygGOAgIBHL4BT74BVQIBG74BQL4BRgIBGuEBF+8BJgIBC/ABF/4BIgIBB+EBxQLhAdECAgEO4QGhAuEBpAICAQ3hAXjhAX4CAQztAaoB7QGvAgIBEPwBqgH8AZQCAgEK8AFV8AFbAgEJ8AFG8AFMAgEI">
+    <Delay Duration="00:00:03" sap2010:WorkflowViewState.IdRef="Delay_1" />
+    <TryCatch DisplayName="Try Catch" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'Empower.exe Empower'" sap2010:WorkflowViewState.IdRef="WindowScope_3" InformativeScreenshot="0c1b730fc615831289c2d7336cd4888b" Selector="&lt;wnd app='empower.exe' cls='#32770' title='Browse Project' /&gt;" TimeoutMS="3000">
+          <ui:WindowScope.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <ui:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Clicking project name: &quot;+ ProjName]" />
+                <ui:SelectItem ContinueOnError="{x:Null}" AlterIfDisabled="True" DelayAfter="2000" DelayBefore="1000" DisplayName="Select Item 'SysTreeView32'" sap2010:WorkflowViewState.IdRef="SelectItem_3" Item="[ProjName]">
+                  <ui:SelectItem.Items>
+                    <scg:List x:TypeArguments="x:String" Capacity="64">
+                      <x:String>Projects</x:String>
+                      <x:String>Custom_Calculation</x:String>
+                      <x:String>Biologics</x:String>
+                      <x:String>CTO</x:String>
+                      <x:String>Custom field_FTO</x:String>
+                      <x:String>Defaults</x:String>
+                      <x:String>Development</x:String>
+                      <x:String>RPA</x:String>
+                      <x:String>RPA_2</x:String>
+                      <x:String>RPA_OQ</x:String>
+                      <x:String>RPA_Script</x:String>
+                      <x:String>RPA_Validation</x:String>
+                      <x:String>SYSTEM_RPA_OQ</x:String>
+                      <x:String>Development_2</x:String>
+                      <x:String>E3_Parent_Test_MMDDYYYY</x:String>
+                      <x:String>E3_Test_ACQOQ_System_07072016</x:String>
+                      <x:String>E3_Test_Fault_08072016</x:String>
+                      <x:String>E3_Test_INST_QCE342_22072016</x:String>
+                      <x:String>E3_Test_MMDDYYYY</x:String>
+                      <x:String>E3_Test_Suit_01July2016</x:String>
+                      <x:String>F3LIMS</x:String>
+                      <x:String>LIMS</x:String>
+                      <x:String>OQ_Project 01</x:String>
+                      <x:String>OQ_Project 02</x:String>
+                      <x:String>OQ_Project 03</x:String>
+                      <x:String>OQ_Project 04</x:String>
+                      <x:String>OQ_Project LIMS</x:String>
+                      <x:String>SAT_Labware LIMS</x:String>
+                      <x:String>UAT_Labware LIMS</x:String>
+                      <x:String>RPACD_OQ</x:String>
+                      <x:String>RPA_1</x:String>
+                      <x:String>System_RPA_Validation</x:String>
+                      <x:String>Valid_OQ1</x:String>
+                      <x:String>Valid_OQApex</x:String>
+                    </scg:List>
+                  </ui:SelectItem.Items>
+                  <ui:SelectItem.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="64a5cb46-3ced-4cb8-9d1b-4ddab3a60aee" InformativeScreenshot="e47c31ca3080d8087ee3a3fb65e385bd" Selector="[&quot;&lt;wnd app='empower.exe' cls='#32770' title='*Browse Project*' /&gt;&lt;wnd ctrlid='20272' title='Tree1' /&gt;&lt;ctrl name='&quot;+ProjName+&quot;' role='outline item' aastate='selectable' /&gt;&quot;]" TimeoutMS="15000" WaitForReady="INTERACTIVE" />
+                  </ui:SelectItem.Target>
+                </ui:SelectItem>
+                <ui:ClickText DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DelayMS="1000" DisplayName="Click Text 'SysTreeView32'" FormattedText="False" sap2010:WorkflowViewState.IdRef="ClickText_11" KeyModifiers="None" MouseButton="BTN_LEFT" Occurrence="1" SendWindowMessages="False" Text="[ProjName]">
+                  <ui:ClickText.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:ClickText.CursorPosition>
+                  <ui:ClickText.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a49ebfa0-7152-4f1f-8773-3db2aab18bb1" InformativeScreenshot="e47c31ca3080d8087ee3a3fb65e385bd" Selector="[&quot;&lt;wnd app='empower.exe' cls='#32770' title='*Browse Project*' /&gt;&lt;wnd ctrlid='20272' title='Tree1' /&gt;&lt;ctrl name='&quot;+ProjName+&quot;' role='outline item' aastate='selectable' /&gt;&quot;]" TimeoutMS="9000" WaitForReady="INTERACTIVE" />
+                  </ui:ClickText.Target>
+                </ui:ClickText>
+                <ui:ClickText DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DelayMS="1000" DisplayName="Click Text 'SysTreeView32'" FormattedText="False" sap2010:WorkflowViewState.IdRef="ClickText_12" KeyModifiers="None" MouseButton="BTN_LEFT" Occurrence="1" SendWindowMessages="False" Text="[ProjName]">
+                  <ui:ClickText.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:ClickText.CursorPosition>
+                  <ui:ClickText.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0d289e71-9f4c-4c99-a23a-e7fe64bada4d" InformativeScreenshot="e47c31ca3080d8087ee3a3fb65e385bd" Selector="[&quot;&lt;wnd app='empower.exe' cls='#32770' title='*Browse Project*' /&gt;&lt;wnd ctrlid='20272' title='Tree1' /&gt;&lt;ctrl name='&quot;+ProjName+&quot;' role='outline item' aastate='selectable' /&gt;&quot;]" WaitForReady="INTERACTIVE">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                    </ui:Target>
+                  </ui:ClickText.Target>
+                </ui:ClickText>
+                <ui:CommentOut DisplayName="Comment Out" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+                  <ui:CommentOut.Body>
+                    <Sequence DisplayName="Ignored Activities" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                      <TryCatch DisplayName="Try Catch" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                        <TryCatch.Try>
+                          <ui:ClickText ContinueOnError="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="1000" DisplayName="Click Text 'outline item'" FormattedText="False" sap2010:WorkflowViewState.IdRef="ClickText_6" KeyModifiers="None" MouseButton="BTN_LEFT" Occurrence="1" SendWindowMessages="False" Text="[ProjName]">
+                            <ui:ClickText.CursorPosition>
+                              <ui:CursorPosition Position="Center">
+                                <ui:CursorPosition.OffsetX>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:CursorPosition.OffsetX>
+                                <ui:CursorPosition.OffsetY>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:CursorPosition.OffsetY>
+                              </ui:CursorPosition>
+                            </ui:ClickText.CursorPosition>
+                            <ui:ClickText.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="57ffc56f-bcde-49c4-857a-b0128dd8b3c3" InformativeScreenshot="c7378e328daf6ce6cdcbcf2eb2879c97" Selector="[&quot;&lt;wnd ctrlid='20272' title='*Browse Project*' /&gt;&lt;ctrl name='&quot;+ProjName+&quot;' role='outline item' /&gt;&quot;]" WaitForReady="INTERACTIVE">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                              </ui:Target>
+                            </ui:ClickText.Target>
+                          </ui:ClickText>
+                        </TryCatch.Try>
+                        <TryCatch.Catches>
+                          <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                            <ActivityAction x:TypeArguments="s:Exception">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                              </ActivityAction.Argument>
+                              <ui:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[exception.Message+&quot;click&quot;]" />
+                            </ActivityAction>
+                          </Catch>
+                        </TryCatch.Catches>
+                      </TryCatch>
+                    </Sequence>
+                  </ui:CommentOut.Body>
+                </ui:CommentOut>
+                <ui:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Clicked project name: &quot;+ ProjName]" />
+                <ui:Click AlterIfDisabled="True" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="1000" DisplayName="Click 'Button'" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e6fabfd1-e52e-421e-9a14-77430fc2ed0c" InformativeScreenshot="a40daa7205247158beea763e288b59d5" Selector="&lt;wnd app='empower.exe' cls='#32770' title='*Browse Project*' /&gt;&lt;wnd ctrlid='1' title='OK' /&gt;" WaitForReady="INTERACTIVE">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+              </Sequence>
+            </ActivityAction>
+          </ui:WindowScope.Body>
+        </ui:WindowScope>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence sap2010:WorkflowViewState.IdRef="Sequence_9">
+              <ui:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Select Project Name: &quot;+ exception.Message]" />
+              <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'Empower.exe Empower'" sap2010:WorkflowViewState.IdRef="WindowScope_4" InformativeScreenshot="0c1b730fc615831289c2d7336cd4888b" Selector="&lt;wnd app='empower.exe' cls='#32770' title='*Browse Project*' /&gt;" TimeoutMS="15000">
+                <ui:WindowScope.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <ui:ClickText ContinueOnError="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DisplayName="Click Text 'outline item'" FormattedText="False" sap2010:WorkflowViewState.IdRef="ClickText_7" KeyModifiers="None" MouseButton="BTN_LEFT" Occurrence="1" SendWindowMessages="False" Text="[ProjName]">
+                        <ui:ClickText.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:ClickText.CursorPosition>
+                        <ui:ClickText.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9bef255c-982c-47fe-9edf-70a1b38d7871" InformativeScreenshot="c7378e328daf6ce6cdcbcf2eb2879c97" Selector="[&quot;&lt;wnd ctrlid='20272' title='*Browse Project*' /&gt;&lt;ctrl name='&quot;+ProjName+&quot;' role='outline item' /&gt;&quot;]" WaitForReady="INTERACTIVE">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                          </ui:Target>
+                        </ui:ClickText.Target>
+                      </ui:ClickText>
+                      <ui:Click AlterIfDisabled="True" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="1000" DisplayName="Click 'Button'" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="37508803-4cb3-40a6-8449-263c908441dd" InformativeScreenshot="a40daa7205247158beea763e288b59d5" Selector="&lt;wnd app='empower.exe' cls='#32770' title='*Browse Project*' /&gt;&lt;wnd ctrlid='1' title='OK' /&gt;" WaitForReady="INTERACTIVE">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                          </ui:Target>
+                        </ui:Click.Target>
+                      </ui:Click>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:WindowScope.Body>
+              </ui:WindowScope>
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+    <ui:CommentOut DisplayName="Comment Out" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap2010:WorkflowViewState.IdRef="Sequence_14">
+          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'Empower.exe Empower'" sap2010:WorkflowViewState.IdRef="WindowScope_5" InformativeScreenshot="0c1b730fc615831289c2d7336cd4888b" Selector="&lt;wnd app='empower.exe' cls='#32770' title='Browse Project' /&gt;">
+            <ui:WindowScope.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <ui:SelectItem ContinueOnError="{x:Null}" AlterIfDisabled="True" DelayAfter="2000" DelayBefore="1000" DisplayName="Select Item 'SysTreeView32'" sap2010:WorkflowViewState.IdRef="SelectItem_2" Item="[ProjName]">
+                    <ui:SelectItem.Items>
+                      <scg:List x:TypeArguments="x:String" Capacity="64">
+                        <x:String>Projects</x:String>
+                        <x:String>Custom_Calculation</x:String>
+                        <x:String>Biologics</x:String>
+                        <x:String>CTO</x:String>
+                        <x:String>Custom field_FTO</x:String>
+                        <x:String>Defaults</x:String>
+                        <x:String>Development</x:String>
+                        <x:String>RPA</x:String>
+                        <x:String>RPA_2</x:String>
+                        <x:String>RPA_OQ</x:String>
+                        <x:String>RPA_Script</x:String>
+                        <x:String>RPA_Validation</x:String>
+                        <x:String>SYSTEM_RPA_OQ</x:String>
+                        <x:String>Development_2</x:String>
+                        <x:String>E3_Parent_Test_MMDDYYYY</x:String>
+                        <x:String>E3_Test_ACQOQ_System_07072016</x:String>
+                        <x:String>E3_Test_Fault_08072016</x:String>
+                        <x:String>E3_Test_INST_QCE342_22072016</x:String>
+                        <x:String>E3_Test_MMDDYYYY</x:String>
+                        <x:String>E3_Test_Suit_01July2016</x:String>
+                        <x:String>F3LIMS</x:String>
+                        <x:String>LIMS</x:String>
+                        <x:String>OQ_Project 01</x:String>
+                        <x:String>OQ_Project 02</x:String>
+                        <x:String>OQ_Project 03</x:String>
+                        <x:String>OQ_Project 04</x:String>
+                        <x:String>OQ_Project LIMS</x:String>
+                        <x:String>SAT_Labware LIMS</x:String>
+                        <x:String>UAT_Labware LIMS</x:String>
+                        <x:String>RPACD_OQ</x:String>
+                        <x:String>RPA_1</x:String>
+                        <x:String>System_RPA_Validation</x:String>
+                        <x:String>Valid_OQ1</x:String>
+                        <x:String>Valid_OQApex</x:String>
+                      </scg:List>
+                    </ui:SelectItem.Items>
+                    <ui:SelectItem.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="43b42328-a7c7-4bfc-b873-a8ded09eb150" InformativeScreenshot="e47c31ca3080d8087ee3a3fb65e385bd" Selector="[&quot;&lt;wnd app='empower.exe' cls='#32770' title='Browse Project' /&gt;&lt;wnd ctrlid='20272' title='Tree1' /&gt;&lt;ctrl name='&quot;+ProjName+&quot;' role='outline item' aastate='selectable' /&gt;&quot;]" WaitForReady="INTERACTIVE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:SelectItem.Target>
+                  </ui:SelectItem>
+                  <ui:ClickText DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DelayMS="1000" DisplayName="Click Text 'SysTreeView32'" FormattedText="False" sap2010:WorkflowViewState.IdRef="ClickText_8" KeyModifiers="None" MouseButton="BTN_LEFT" Occurrence="1" SendWindowMessages="False" Text="[ProjName]">
+                    <ui:ClickText.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:ClickText.CursorPosition>
+                    <ui:ClickText.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c6870d38-7691-4e28-aacd-3763e85fd779" InformativeScreenshot="e47c31ca3080d8087ee3a3fb65e385bd" Selector="[&quot;&lt;wnd app='empower.exe' cls='#32770' title='Browse Project' /&gt;&lt;wnd ctrlid='20272' title='Tree1' /&gt;&lt;ctrl name='&quot;+ProjName+&quot;' role='outline item' aastate='selectable' /&gt;&quot;]" WaitForReady="INTERACTIVE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:ClickText.Target>
+                  </ui:ClickText>
+                  <ui:ClickText DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DelayMS="1000" DisplayName="Click Text 'SysTreeView32'" FormattedText="False" sap2010:WorkflowViewState.IdRef="ClickText_9" KeyModifiers="None" MouseButton="BTN_LEFT" Occurrence="1" SendWindowMessages="False" Text="[ProjName]">
+                    <ui:ClickText.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:ClickText.CursorPosition>
+                    <ui:ClickText.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="06d7e39a-b732-472f-aea3-7f5fcffe8e80" InformativeScreenshot="e47c31ca3080d8087ee3a3fb65e385bd" Selector="[&quot;&lt;wnd app='empower.exe' cls='#32770' title='Browse Project' /&gt;&lt;wnd ctrlid='20272' title='Tree1' /&gt;&lt;ctrl name='&quot;+ProjName+&quot;' role='outline item' aastate='selectable' /&gt;&quot;]" WaitForReady="INTERACTIVE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:ClickText.Target>
+                  </ui:ClickText>
+                  <ui:ClickText ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Text 'outline item'" FormattedText="False" sap2010:WorkflowViewState.IdRef="ClickText_10" KeyModifiers="None" MouseButton="BTN_LEFT" Occurrence="1" SendWindowMessages="False" Text="[ProjName]">
+                    <ui:ClickText.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:ClickText.CursorPosition>
+                    <ui:ClickText.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="56173f1b-e843-455b-b478-a786f3c3bc8f" InformativeScreenshot="c7378e328daf6ce6cdcbcf2eb2879c97" Selector="[&quot;&lt;wnd ctrlid='20272' title='Tree1' /&gt;&lt;ctrl name='&quot;+ProjName+&quot;' role='outline item' /&gt;&quot;]" WaitForReady="INTERACTIVE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:ClickText.Target>
+                  </ui:ClickText>
+                  <ui:Click AlterIfDisabled="True" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="1000" DisplayName="Click 'Button'" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                    <ui:Click.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:Click.CursorPosition>
+                    <ui:Click.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="08a0ab6d-2cb2-4d02-9e71-eb82fd640be1" InformativeScreenshot="a40daa7205247158beea763e288b59d5" Selector="&lt;wnd app='empower.exe' cls='#32770' title='Browse Project' /&gt;&lt;wnd ctrlid='1' title='OK' /&gt;" WaitForReady="INTERACTIVE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:Click.Target>
+                  </ui:Click>
+                </Sequence>
+              </ActivityAction>
+            </ui:WindowScope.Body>
+          </ui:WindowScope>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+  </Sequence>
+</Activity>

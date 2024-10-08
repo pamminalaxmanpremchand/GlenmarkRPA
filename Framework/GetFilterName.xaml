@@ -1,0 +1,281 @@
+<Activity mc:Ignorable="sads sap sap2010" x:Class="Test_Abhi" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_FilterName" Type="InArgument(x:String)" />
+    <x:Property Name="ProjName" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Test_Abhi_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Plugin.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap2010:WorkflowViewState.ViewStateManager>
+    <sap2010:ViewStateManager>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="754,91" Id="LogMessage_4" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="754,22" Id="Delay_5" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="314,106" Id="GetValue_4">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="314,91" Id="LogMessage_5" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="336,361" Id="Sequence_23">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="754,507" Id="WindowScope_10">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="754,60" Id="Assign_5" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="314,134" Id="TypeInto_3" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="336,258" Id="Sequence_27">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="706,404" Id="WindowScope_12">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="314,106" Id="GetValue_9" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="314,106" Id="WaitUiElementAppear_3" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="706,198" Id="AnchorBase_3">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="706,91" Id="LogMessage_8" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="706,91" Id="LogMessage_9" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="242,60" Id="Assign_6" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="242,60" Id="Assign_7" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="706,208" Id="If_4" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="728,1276" Id="Sequence_30">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="754,1438" Id="DoWhile_3">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="776,2402" Id="Sequence_17">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="798,2526" Id="Sequence_4">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="838,2606" Id="Test_Abhi_1" />
+    </sap2010:ViewStateManager>
+  </sap2010:WorkflowViewState.ViewStateManager>
+  <Sequence DisplayName="GetFilterName" sap2010:WorkflowViewState.IdRef="Sequence_4" sads:DebugSymbol.Symbol="d4MBQzpcVXNlcnNcVDAwMDA3MTIzLkZUM0VNUFFQUk8wMDNcLm51Z2V0XHBhY2thZ2VzXFJQQUNEX1Byb2Nlc3Nlc1wxLjAuNzczMC4xODgxNlxsaWJcbmV0NDVcUlBBQ0RfUmV2aWV3XEZyYW1ld29ya1xHZXRGaWx0ZXJOYW1lLnhhbWwvSwO7AQ4CAQFONU48AgECUAW5ARACAQNUB1SIAQIBNVUHVU4CATNWB2kYAgEpagdxEAIBJXIHuAERAgEEVHRUhQECATZVF1UhAgE0VpMCVs0CAgEyXA1mGAIBKm8zbzgCAShsNGxBAgEmcl1ycgIBI3MJtwEUAgEFXQ9kHQIBLWUPZbgBAgErdwuGARwCARyHAQueARsCARSfAQufAakBAgESoAELoAG6AQIBEKEBC7YBEAIBBmJCYk4CAS5fjQFfjwICATFfmgJfoAICATBlfGW1AQIBLHeVAnfPAgIBIn0RgwEcAgEdmAEPnAEoAgEZjQERlAEfAgEVnwF4nwGmAQIBE6ABeKABtwECARGhARmhAUYCAQejAQ+qARgCAQytAQ+0ARgCAQh+E4IBIQIBHpoBjQGaAbwCAgEbmgHHApoBzQICARqSAUSSAVACARaPAaQBjwGzAQIBGKgBO6gBPwIBD6UBPKUBSQIBDbIBO7IBQAIBC68BPK8BSQIBCYABpgGAAbsCAgEhfp0Cfq4CAgEf">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Boolean" Name="IsResultsFound" />
+      <Variable x:TypeArguments="x:Boolean" Default="False" Name="IsFilterSet" />
+    </Sequence.Variables>
+    <Sequence DisplayName="GetFilterName" sap2010:WorkflowViewState.IdRef="Sequence_17">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="ui:GenericValue" Name="ComboValue" />
+      </Sequence.Variables>
+      <ui:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[in_FilterName]" />
+      <Delay Duration="00:00:30" sap2010:WorkflowViewState.IdRef="Delay_5" />
+      <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'project.exe RPA'" sap2010:WorkflowViewState.IdRef="WindowScope_10" InformativeScreenshot="d58aca22e077f7353879b8bf1d828885" Selector="&lt;wnd app='project.exe' cls='Afx:*' title='*as*' /&gt;">
+        <ui:WindowScope.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_23">
+              <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'ComboBox'" sap2010:WorkflowViewState.IdRef="GetValue_4">
+                <ui:GetValue.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bac02ff4-ddf5-430a-a4ee-37f0ef4b440c" InformativeScreenshot="18708f4c1bd6d0dff9cfeebbe192f8b0" Selector="&lt;wnd ctrlid='20302' title='Project Window dialog bar' /&gt;&lt;wnd ctrlid='20302' /&gt;&lt;ctrl automationid='DropDown' /&gt;" TimeoutMS="5000" WaitForReady="INTERACTIVE" />
+                </ui:GetValue.Target>
+                <ui:GetValue.Value>
+                  <OutArgument x:TypeArguments="ui:GenericValue">[ComboValue]</OutArgument>
+                </ui:GetValue.Value>
+              </ui:GetValue>
+              <ui:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Get Filter name: Combo box: &quot; + ComboValue]" />
+            </Sequence>
+          </ActivityAction>
+        </ui:WindowScope.Body>
+      </ui:WindowScope>
+      <Assign sap2010:WorkflowViewState.IdRef="Assign_5">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:Boolean">[IsFilterSet]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+        </Assign.Value>
+      </Assign>
+      <DoWhile DisplayName="Do while" sap2010:WorkflowViewState.IdRef="DoWhile_3" Condition="[IsFilterSet=False]">
+        <Sequence sap2010:WorkflowViewState.IdRef="Sequence_30">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:Boolean" Name="vBln_FilterPopup" />
+          </Sequence.Variables>
+          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'Custom_Ca Afx'" sap2010:WorkflowViewState.IdRef="WindowScope_12" InformativeScreenshot="3eed12664c8117564ccd62a00f4de49d" Selector="&lt;wnd app='project.exe' cls='Afx:*' title='*as*' /&gt;">
+            <ui:WindowScope.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                  <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" AlterIfDisabled="True" ClickBeforeTyping="False" DisplayName="Type into" EmptyField="False" sap2010:WorkflowViewState.IdRef="TypeInto_3" SendWindowMessages="False" SimulateType="False" Text="[in_FilterName]">
+                    <ui:TypeInto.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6290ed31-1520-425d-be97-680b88285b62" InformativeScreenshot="18708f4c1bd6d0dff9cfeebbe192f8b0" Selector="&lt;wnd app='project.exe' cls='Afx:*' title='*as *' /&gt;&lt;wnd ctrlid='20302' title='Project Window dialog bar' /&gt;&lt;wnd ctrlid='20302' /&gt;" WaitForReady="INTERACTIVE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:TypeInto.Target>
+                  </ui:TypeInto>
+                </Sequence>
+              </ActivityAction>
+            </ui:WindowScope.Body>
+          </ui:WindowScope>
+          <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base" sap2010:WorkflowViewState.IdRef="AnchorBase_3">
+            <ui:AnchorBase.Action>
+              <ActivityAction x:TypeArguments="ui:Anchor">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="ui:Anchor" Name="ContextAnchor" />
+                </ActivityAction.Argument>
+                <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'ComboBox'" sap2010:WorkflowViewState.IdRef="GetValue_9">
+                  <ui:GetValue.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="eb19a493-6679-4f20-9fce-74349f91a2ae" InformativeScreenshot="f4c2046dbfcb009adf508ec2e323b62f" Selector="&lt;wnd /&gt;" WaitForReady="INTERACTIVE">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                    </ui:Target>
+                  </ui:GetValue.Target>
+                  <ui:GetValue.Value>
+                    <OutArgument x:TypeArguments="ui:GenericValue">[ComboValue]</OutArgument>
+                  </ui:GetValue.Value>
+                </ui:GetValue>
+              </ActivityAction>
+            </ui:AnchorBase.Action>
+            <ui:AnchorBase.AnchorProvider>
+              <ui:WaitUiElementAppear FoundElement="{x:Null}" DisplayName="Find Element 'Static'" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_3" WaitActive="False" WaitVisible="False">
+                <ui:WaitUiElementAppear.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f3759c68-c3bc-462a-a4ae-4b70353e1397" InformativeScreenshot="ada43848ecc92efac0053ad6b2ff4727" Selector="&lt;wnd app='project.exe' cls='Afx:*' title='*as*' /&gt;&lt;wnd omit:ctrlid='20302' title='Project Window dialog bar' /&gt;&lt;wnd omit:cls='Static' title='Filter By:' /&gt;" TimeoutMS="5000" WaitForReady="INTERACTIVE" />
+                </ui:WaitUiElementAppear.Target>
+              </ui:WaitUiElementAppear>
+            </ui:AnchorBase.AnchorProvider>
+          </ui:AnchorBase>
+          <ui:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Combo Box value:  &quot;+ ComboValue]" />
+          <ui:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[in_FilterName.ToUpper + &quot; = &quot;+ ComboValue.ToUpper]" />
+          <If Condition="[ComboValue.ToUpper =in_FilterName.ToUpper]" sap2010:WorkflowViewState.IdRef="If_4">
+            <If.Then>
+              <Assign sap2010:WorkflowViewState.IdRef="Assign_6">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Boolean">[IsFilterSet]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                </Assign.Value>
+              </Assign>
+            </If.Then>
+            <If.Else>
+              <Assign sap2010:WorkflowViewState.IdRef="Assign_7">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Boolean">[IsFilterSet]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                </Assign.Value>
+              </Assign>
+            </If.Else>
+          </If>
+        </Sequence>
+      </DoWhile>
+    </Sequence>
+  </Sequence>
+</Activity>
